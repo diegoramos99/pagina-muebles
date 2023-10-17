@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+html{
+    /* border: 20px solid black; */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* border: 10px solid red; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1,h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+}
 /* --------------elementos predeterminados------------------- */
 .img {
     height: 100%;
@@ -19,34 +36,61 @@
     height: 4rem;
     margin: 0 5rem;
 }
-
-/*----------------------------- header -----------------------*/
-.cointainer {}
-
-.header-nav-container {
-    width: 100%;
-    height: 15vh;
-    background-color: rgb(0, 0, 0);
-    /* border: 2px solid rgb(234, 38, 38); */
-    margin: auto;
+.btn:hover {
+    background-color: rgb(202, 202, 202);
+    color: black;
+    box-shadow: 0px 0px 5px black;
 }
 
-.col-6 {}
+/*----------------------------- header -----------------------*/
+.cointainer {
+    width: 100%;
+    overflow: hidden;
+
+}
+header{
+    /* border: 5px solid rgb(255, 255, 2); */
+    width: 100%;
+    height: 15vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+header nav{
+    /* border: 10px solid violet; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header-nav-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    /* border: 10px solid rgb(38, 234, 51); */
+    margin: 0;
+    display: flex;
+
+
+    
+}
 
 .header-logo {
     /* border: 2px solid rgb(186, 44, 44); */
+    width: 40%;
 }
 
 .header-logo_container {
-    /* border: 2px solid rgb(255, 0, 0); */
-    width: 100%;
+    /* border: 2px solid rgb(98, 0, 255); */
+   width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header-logo_container>img {
-    border: 2px solid rgb(6, 243, 57);
+    /* border: 2px solid rgb(6, 243, 57); */
     width: auto;
     height: 7rem;
     margin: auto;
@@ -54,19 +98,22 @@
 }
 
 .header-nav {
+    /* border: 2px solid rgb(255, 0, 0); */
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .header-nav ul {
+    /* border: 2px solid black; */
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 100%;
     list-style: none;
-    border: 2px solid black;
     align-self: center;
     color: white;
     margin: auto;
+    flex-wrap: wrap;
 
 }
 
@@ -168,7 +215,7 @@
 }
 
 .muestras-container_presentacion-container {
-    /* border: 22px solid black; */
+    border: 20px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,11 +227,16 @@
 .cruz {
     color: rgb(236, 0, 0);
     position: absolute;
-    font-size: 100px;
+    font-size: larger;
     display: none;
+    transition: display .5s;
 }
+.cruz .bi{
+    font-size: xx-large;
+    color: aliceblue;
 
-.muestras-container_presentacion-container:hover {
+}
+.muestras-container_presentacion-container .contenedor-img:hover {
     /* opacity: .5; */
     /* border: 22px solid red; */
     filter: brightness(50%);
@@ -195,18 +247,22 @@
 
 .muestras-container_presentacion-container:hover>.cruz {
     display: flex;
-    color: rgb(251, 208, 53);
-
-    filter: brightness(100%);
+    z-index: 10;
+    filter: brightness(200%);
+  
     /* Ajusta el valor según lo necesites */
-
-
 }
+.cruz:hover+.contenedor-img{
+    filter: brightness(50%);
+}
+
+
 
 .contenedor-img {
     /* border: 2px solid red; */
     height: 100%;
     width: 100%;
+    transition: filter .5s;
 }
 
 .muestras-container_titulo {
@@ -223,25 +279,31 @@
 }
 .muestras-container_descripcion-container {
     /* border: 2px solid rgb(128, 4, 0); */
+    margin: 0 1rem;
     width: 70%;
     position: relative;
     top: 10%;
 }
+.muestras-container_descripcion h2 {
+    /* border: 2px solid rgb(255, 8, 0); */
+    margin: auto;
+    width: 100%;
+    position: relative;
+
+}
+
 
 
 .muestras-container_descripcion p {
     /* border: 2px solid red; */
     width: 100%;
     line-height: 2.5;
-    margin: 0 5rem;
+
     letter-spacing: 2px; /* Aumenta el espaciado entre letras a 2 píxeles */
 
 }
 
-.muestras-container_descripcion h2 {
-    margin: 0 5rem;
-    /* border: 2px solid red; */
-}
+
 
 .muestras-container-2 {
     display: flex;
@@ -251,6 +313,8 @@
     height: 60vh;
 
 }
+
+
 
 /* ----------------proceso de trabajo------------------------------------------- */
 .proceso-trabajo {
@@ -283,7 +347,7 @@
 }
 
 .proceso-trabajo_item {
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 25%;
     height: 100%;
     display: flex;
@@ -319,21 +383,34 @@
 }
 
 .proceso-trabajo_item:hover>.item-img {
-    opacity: 1;
+    filter: brightness(70%);
 }
 
 .proceso-trabajo_item:hover>.item-subtitulo {
-    margin: 0;
+    margin-top: 0;
+    filter: brightness(150%);
+
 }
 
 .item-img {
-    opacity: .7;
+   filter: brightness(40%);
+   transition: filter  .5s;
+   transition: transform .5s;
     object-fit: contain;
+
+}
+.item-img:hover {
+transform: scale(1.1);
+
 }
 
 .item-subtitulo {
     margin-top: 4rem;
     position: absolute;
+    color: aliceblue;
+    transition: filter , margin-top  .5s;
+
+
 }
 
 .proceso-trabajo_BTN {
@@ -378,15 +455,16 @@
     justify-content: center;
     background-color: aliceblue;
     margin: 1rem;
+
 }
 
 .galeria_nav ul {
-    /* border: 2px solid rgb(236, 6, 6); */
+    /* border: 22px solid rgb(236, 6, 6); */
     width: 50%;
     display: flex;
     list-style: none;
     justify-content: space-around;
-
+    flex-wrap: wrap;
 }
 
 .galeria_nav ul li {
@@ -440,12 +518,22 @@
 .galeria-imgs_titulo {
     /* border: 2px solid red; */
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
-.galeria-imgs_titulo_superior {}
+.galeria-imgs_titulo_superior {
+  
 
-.galeria-imgs_titulo_inferior {}
+}
+
+.galeria-imgs_titulo_inferior {
+    /* border: 2px solid rgb(0, 255, 81); */
+  width: 100%;
+  text-align: center;
+}
 
 .btn-mostrar-mas {
     height: 10%;
@@ -528,7 +616,7 @@ color: white;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
-    height: 30vh;
+    height: auto;
 }
 .footer-superior_descripcion{
     /* border: 2PX solid rgb(6, 232, 62); */
