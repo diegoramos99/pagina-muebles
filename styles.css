@@ -148,7 +148,10 @@ header nav{
 
 
 /*---------------------------- carrusel------------------------------- */
-.carusel {}
+.carusel {
+    width: 100%;
+    border: 10px solid red;
+}
 
 .carousel-container {
     /* border: 22px solid red; */
@@ -164,17 +167,18 @@ header nav{
 
 .carousel-slide {
 
-    width: 100%;
+     border: 2px solid rgb(11, 44, 255); 
+    width: 100vw;
+    height: 100%;
     display: flex;
-    /* border: 2px solid black; */
     background-color: rgb(198, 198, 198);
 
 }
 
 .carousel-slide img {
 
+     border: 2px solid rgb(23, 242, 41); 
     margin: auto;
-    /* border: 2px solid rgb(23, 242, 41); */
 
 }
 
