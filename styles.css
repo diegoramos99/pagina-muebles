@@ -323,29 +323,26 @@ header nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
     background-color: black;
-    padding: 0rem 0;
 }
 
 .proceso-trabajo_titulo {
-
+    /* border: 2px solid rgb(217, 16, 16); */
     color: aliceblue;
-    padding: 1rem 0;
-    /*border: 2px solid rgb(217, 16, 16); */
     width: 100%;
+    height: 20%;
     margin: auto;
     text-align: center;
-    margin: 2rem 0;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .proceso-trabajo-contenido {
     /* border: 22px solid red; */
-
-    height: 70%;
+    height: 60%;
     display: flex;
     justify-content: center;
-
 }
 
 .proceso-trabajo_item {
@@ -362,7 +359,58 @@ header nav{
     padding: 0%;
     cursor: pointer;
 }
-
+/* --------------------ventana emergente------------- */
+.proceso-trabajo_item_ventana-emergente{
+    width:0px;
+    height: 0px;
+    position: absolute;
+    transition: width 2s,height 2s;
+    background-color: rgb(211, 212, 212);
+    /* overflow: hidden; */
+}
+.proceso-trabajo_item_ventana-emergente1{
+    width:0px;
+    height: 0px;
+    /* margin: auto; */
+    position: absolute;
+    transition: width 2s,height 2s;
+    background-color: rgb(211, 212, 212);
+    /* overflow: hidden; */
+}
+.proceso-trabajo_item_ventana-emergente div{
+margin-left: 100%;
+opacity: 0;
+transition: all 2.5s;
+}
+.proceso-trabajo_item_ventana-emergente1 div{
+margin-left: 100%;
+opacity: 0;
+transition: all 2.5s;
+}
+.proceso-trabajo_item_ventana-emergente:hover> div{
+margin-left: 0;
+opacity: 1;
+}
+.proceso-trabajo_item_ventana-emergente1:hover> div{
+margin-left: 0;
+opacity: 1;
+}
+.galeria-imgs_container:hover>.proceso-trabajo_item_ventana-emergente {
+    /* border: 22px solid rgb(5, 5, 5); */
+    width: 100%;
+    height: 100%;
+}
+.galeria-imgs_container:hover>.proceso-trabajo_item_ventana-emergente1 {
+    /* border: 12px solid rgb(5, 5, 5); */
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+/* .------------^^^^^------------------------------- */
 .proceso-trabajo_item .item-img {
     width: 100%;
     height: 100%;
@@ -418,7 +466,9 @@ transform: scale(1.1);
 }
 
 .proceso-trabajo_BTN {
+    /* border: 2px solid red; */
     width: 100%;
+    height: 20%;
     display: flex;
     justify-content: center;
 
