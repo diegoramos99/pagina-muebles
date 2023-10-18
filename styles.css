@@ -92,7 +92,6 @@ header nav{
 .header-logo_container>img {
     /* border: 2px solid rgb(6, 243, 57); */
     width: auto;
-    height: 7rem;
     margin: auto;
     border-radius: 50%;
 }
@@ -690,6 +689,9 @@ color: white;
   width: min-content;
   display: flex;
 
+}
+.redes-sociales div a {
+    color: aliceblue;
 }
 .redes-sociales >div .bi{
   /* border: 2px solid red; */

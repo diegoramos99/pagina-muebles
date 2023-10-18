@@ -1,11 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* ---------------header----------------------- */
 
-.header-nav-container{
+/*.header-nav-container{
     width: 100vw;
 background-color: transparent;
 }
@@ -20,18 +16,30 @@ background-color: transparent;
     color: rgb(255, 255, 255);
     font-weight: bolder;
 }
-
+*/
+header{
+    background-color: transparent;
+}
+nav{
+    background-color: transparent;
+}
+nav div{
+    /*background-color: green;
+    border: 2px solid red;*/
+}
 
 
 
 /* ----------------carrusel------------------- */
 .portada{
-    /* border: 3px solid rgb(0, 89, 255); */
-   height: 50vh; 
+   /*border: 3px solid rgb(0, 89, 255); */
+   height: 70vh; 
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 100%;
+ 
 }
 .portada-img{
     height: 100%;
@@ -45,7 +53,7 @@ background-color: transparent;
 .portada-img{
 opacity: .8;
 }
-.portada_container-texto , a{
+.portada_container-texto {
     position: absolute;
     color: rgb(0, 0, 0);
     z-index: 10;
@@ -77,15 +85,22 @@ opacity: .8;
 
 
 /* --------------formulario------------------- */
+.formmulario-container{
+   /* border: 5px solid red; */
+    height: 70vh;
+    display: flex;
+}
 .formulario {
+   /* border: 22px solid red;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .formulario_section-contain{
+    /*border: 2px solid black;*/
     width: 50%;
-    /* border: 2px solid black; */
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,11 +110,7 @@ opacity: .8;
     /* border: 2px solid red; */
     width: 100%;
 }
-.formmulario-container{
-    /* border: 5px solid red; */
-    height: 70vh;
-    display: flex;
-}
+
 .formmulario-container .formulario{
     /* border: 4px solid green; */
     display: flex;
@@ -142,8 +153,9 @@ opacity: .8;
     background-color: rgba(0, 0, 0, 0.559);
     color: white;
 }
-.formmulario-container>.direccion{
-/* border: 4px solid blueviolet; */
+.formmulario-container > .direccion{
+ /*border: 4px solid blueviolet; */
+ position: relative;
 width: 50%;
 display: flex;
 align-items: center;
@@ -152,9 +164,11 @@ justify-content: start;
 
 }
 .formmulario-container .footer-superior {
-    /* border: 5px solid blue; */
+    /*border: 5px solid blue; */
+    border-radius:30px ;
     width:45%;
-    height: 120%;
+    height: auto;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     margin: 0 3rem;
@@ -164,6 +178,7 @@ justify-content: start;
 .footer-superior_descripcion{
     /* border: 4px solid red; */
     width: 100%;
+    height: 50%;
    padding: 2rem;
 }
 .footer-superior .datos-ubicacion{
