@@ -150,34 +150,38 @@ header nav{
 /*---------------------------- carrusel------------------------------- */
 .carusel {
     width: 100%;
-    border: 10px solid red;
+    /*border: 10px solid red;*/
 }
 
 .carousel-container {
     /* border: 22px solid red; */
     width: 100%;
     height: 85vh;
-    margin: 0;
+    display: flex;
     overflow: hidden;
     position: relative;
-    display: flex;
     justify-content: center;
-
 }
 
-.carousel-slide {
+.carousel-container .carousel-slide {
 
-     border: 2px solid rgb(11, 44, 255); 
+     /*border: 2px solid rgb(11, 44, 255); */
     width: 100vw;
     height: 100%;
-    display: flex;
+    
     background-color: rgb(198, 198, 198);
-
+    position: absolute;
+    transition: all 4s;
 }
 
+.opacity{
+    opacity:1;
+    z-index: 10;
+    
+}
 .carousel-slide img {
 
-     border: 2px solid rgb(23, 242, 41); 
+     /*border: 2px solid rgb(23, 242, 41); */
     margin: auto;
 
 }

@@ -3,15 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const intervalTime = 5000; // Cambiar cada 5 segundos
 
-    // Mostrar el primer slide
-    slides[currentIndex].style.display = "block";
+    //Mostrar el primer slide
+    //slides[currentIndex].style.display = "block";
+    slides[currentIndex].classList.add("opacity")
 
-    function nextSlide() {
-        slides[currentIndex].style.display = "none";
+    function mostrarCarrusel() {
+        //elemento.classList.replace("carousel-slide", "carousel-slide-1");
+       // slides[currentIndex].classList.remove("opacity");
+        slides[currentIndex].style.opacity = "0";
+
         currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].style.display = "block";
+        console.log(currentIndex);
+        
+        slides[currentIndex].style.opacity = "1";
+        //slides[currentIndex].classList.add("opacity");
+
     }
 
     // Cambiar de slide automáticamente
-    setInterval(nextSlide, intervalTime);
+    setInterval(mostrarCarrusel, intervalTime);
 });
