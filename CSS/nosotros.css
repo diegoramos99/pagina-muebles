@@ -1,0 +1,35 @@
+.muestras{
+    margin: 4rem 0;
+}
+
+.muestras article{
+    /*border: 2px solid red;*/
+    margin: auto;
+}
+.muestras-container_presentacion-container {
+
+}
+.muestras-container_presentacion-container {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(238, 215, 83);
+}
+.muestras-container_descripcion-container {
+    top: auto;
+}
+.muestras-container_descripcion .muestras-container_descripcion-container{
+    /*border: 2px solid rgb(0, 255, 72);*/
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.muestras-container-2 .muestras-container_descripcion{
+    background-color: black;
+    color: aliceblue;
+}
