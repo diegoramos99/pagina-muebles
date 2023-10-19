@@ -51,7 +51,7 @@ h1,h2{
 header{
     /* border: 5px solid rgb(255, 255, 2); */
     width: 100%;
-    height: 15vh;
+    height: 10.5vh;
     z-index: 100;
     top: 0;
     left: 0;
@@ -65,13 +65,10 @@ header nav{
 .header-nav-container {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0);
+    background-color: rgb(22, 22, 22);
     /* border: 10px solid rgb(38, 234, 51); */
     margin: 0;
     display: flex;
-
-
-    
 }
 
 .header-logo {
@@ -98,16 +95,16 @@ header nav{
 
 .header-nav {
     /* border: 2px solid rgb(255, 0, 0); */
-    display: flex;
-    justify-content: center;
-    width: 100%;
+
+    width: 60%;
+    margin: auto;
 }
 
 .header-nav ul {
     /* border: 2px solid black; */
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 80%;
     list-style: none;
     align-self: center;
     color: white;
@@ -122,19 +119,28 @@ header nav{
     flex-direction: column;
     text-align: center;
     cursor: pointer;
+   
     transition: all 2s;
 
 }
+.header-nav ul a {
+    color: aliceblue;
+    text-decoration: none;
 
-.header-nav ul li:hover>.contenedor-icon-li {
-    display: block;
+}
+.header-nav ul  li a .contenedor-li{
 
+    font-size: medium;
 }
 
 .header-nav ul li .contenedor-icon-li {
     display: none;
 }
 
+.header-nav ul li :hover>.contenedor-icon-li {
+    display: block;
+
+}
 
 
 
@@ -149,8 +155,13 @@ header nav{
 
 /*---------------------------- carrusel------------------------------- */
 .carusel {
+    /* border: 10px solid red; */
     width: 100%;
-    /*border: 10px solid red;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-container {
@@ -159,9 +170,20 @@ header nav{
     height: 85vh;
     display: flex;
     overflow: hidden;
-    position: relative;
+
     justify-content: center;
 }
+/* .carusel .btn-carusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 10%;
+   height: 10%;
+   background-color: black;
+   color: aliceblue;
+   margin: auto;
+   position: absolute;
+} */
 
 .carousel-container .carousel-slide {
 
@@ -186,7 +208,7 @@ header nav{
 
 }
 
-.button {
+.btn-carusel {
     position: absolute;
     bottom: 15%;
     background-color: black;
@@ -194,11 +216,14 @@ header nav{
     padding: 1rem 4rem;
     opacity: .7;
     cursor: pointer;
-
+    z-index: 100;
+    transition: all 1s;
 }
 
-.button:hover {
+.btn-carusel:hover {
     opacity: 1;
+    filter: brightness(150%);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.452);
 }
 
 /* -------------------------muestras.---------------------------------------- */
@@ -382,7 +407,8 @@ justify-content: center;
     /* margin: auto; */
     position: absolute;
     transition: width 2s,height 2s;
-    background-color: rgb(211, 212, 212);
+    background-image:url('../assets/ventana-emergente.jpg') ;
+    color: aliceblue;
     /* overflow: hidden; */
 }
 .proceso-trabajo_item_ventana-emergente div{

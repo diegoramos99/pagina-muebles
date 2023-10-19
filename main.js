@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Mostrar el primer slide
     //slides[currentIndex].style.display = "block";
-    slides[currentIndex].classList.add("opacity")
+   // slides[currentIndex].classList.add("opacity")
 
     function mostrarCarrusel() {
         //elemento.classList.replace("carousel-slide", "carousel-slide-1");
