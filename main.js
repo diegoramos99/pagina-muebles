@@ -23,3 +23,48 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cambiar de slide automáticamente
     setInterval(mostrarCarrusel, intervalTime);
 });
+
+// selecionamos cada imagen de la galeria
+     const contenedorImg1=document.querySelectorAll('.galeria-imgs_container');
+
+
+// aca creamos ell contenido de cada ventana emergente
+const contenidoVentanaEmergente1=
+`<div class="emergente-titulo hijos">
+<h2>muebele de madera</h2>
+</div>
+<div class="emergente-caracteristicas hijos">madera del algun tipo</div>
+<div class="emergente-caracteristicas hijos">mueble para un determinado ambiente</div>
+<div class="emergente-caracteristicas hijos">costo estimado de muebels de este tipo</div>`
+
+    
+const hijos=document.querySelectorAll(".hijos");
+let estaEncima=false;
+hijos.array.forEach(function(element)  {
+    element.addEventListener('mouseover',function() {
+       estaEncima= true
+    })
+    element.addEventListener('mouseout',function() {
+       estaEncima= false
+    })
+});
+    contenedorImg1.forEach(function(elemento){
+        const ventanaEmergente=elemento.querySelector(".proceso-trabajo_item_ventana-emergente1");
+
+        elemento.addEventListener('mouseover',function(){
+            ventanaEmergente.innerHTML=contenidoVentanaEmergente1;
+      
+        })
+        elemento.addEventListener('mouseout',function() {
+            if (estaEncima) {
+                console.log("esta encima");
+            }else{
+                ventanaEmergente.innerHTML='';
+                console.log("se limpio el contendio");
+
+            }
+        })
+     })
+   
+
+     
