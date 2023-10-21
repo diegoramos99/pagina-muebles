@@ -38,16 +38,7 @@ const contenidoVentanaEmergente1=
 <div class="emergente-caracteristicas hijos">costo estimado de muebels de este tipo</div>`
 
     
-const hijos=document.querySelectorAll(".hijos");
-let estaEncima=false;
-hijos.array.forEach(function(element)  {
-    element.addEventListener('mouseover',function() {
-       estaEncima= true
-    })
-    element.addEventListener('mouseout',function() {
-       estaEncima= false
-    })
-});
+
     contenedorImg1.forEach(function(elemento){
         const ventanaEmergente=elemento.querySelector(".proceso-trabajo_item_ventana-emergente1");
 
@@ -55,15 +46,11 @@ hijos.array.forEach(function(element)  {
             ventanaEmergente.innerHTML=contenidoVentanaEmergente1;
       
         })
-        elemento.addEventListener('mouseout',function() {
-            if (estaEncima) {
-                console.log("esta encima");
-            }else{
-                ventanaEmergente.innerHTML='';
-                console.log("se limpio el contendio");
-
-            }
+        elemento.addEventListener('mouseout',function(){
+            ventanaEmergente.innerHTML="";
+      
         })
+       
      })
    
 

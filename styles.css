@@ -523,7 +523,7 @@ transform: scale(1.1);
 }
 
 .galeria-imgs {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     width: 100%;
     height: auto;
     display: grid;
@@ -541,9 +541,8 @@ transform: scale(1.1);
     align-items: end;
         height: 100%;
         width: 100%; 
-     
         cursor: pointer;
-        /* overflow: hidden; */
+        /* overflow: scroll; */
 }
 .galeria-imgs_container:hover  {
     /* border: 5px solid violet; */
@@ -567,7 +566,7 @@ transform: scale(1.1);
 }
 
 .galeria-imgs_titulo {
-    border: 2px solid red; 
+    /* border: 2px solid red;  */
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -601,6 +600,8 @@ transform: scale(1.1);
    color: white;
    box-shadow: 0px 0px 20px black;
 }
+
+
 /* --------------------ventana emergente------------- */
 /* .proceso-trabajo_item_ventana-emergente{
     width:0px;
@@ -611,17 +612,15 @@ transform: scale(1.1);
     overflow: hidden;
 } */
 .proceso-trabajo_item_ventana-emergente1{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width:0px;
     height: 0px;
-    /* margin: auto; */
     position: absolute;
-    transition: width 1s,height 1s;
+    transition: transform 2.5s, width 1.5s,height 2s;
     background-image:url('../assets/ventana-emergente.jpg') ;
     background-size: contain;
     color: aliceblue;
-
-    left:  00%;
+    left:  0%;
     /* overflow: hidden; */
 }
 /* .proceso-trabajo_item_ventana-emergente div{
@@ -629,22 +628,22 @@ margin-left: 100%;
 opacity: 0;
 transition: all 2.5s;
 } */
-.proceso-trabajo_item_ventana-emergente1 div{
-/* margin-left: 100%; */
+/* .proceso-trabajo_item_ventana-emergente1 div{
+margin-left: 100%;
 display: block;
 opacity: 1;
 transition: all 2.5s;
-}
+} */
 /* .proceso-trabajo_item_ventana-emergente:hover> div{
 margin-left: 0;
 opacity: 1;
 } */
-.proceso-trabajo_item_ventana-emergente1:hover> div{
+/* .proceso-trabajo_item_ventana-emergente1:hover> div{
     display: block;
 margin-left: 0;
 opacity: 1;
 
-}
+} */
 /* .galeria-imgs_container:hover>.proceso-trabajo_item_ventana-emergente {
     border: 22px solid rgb(5, 5, 5);
     width: 100%;
@@ -661,6 +660,15 @@ opacity: 1;
     z-index: 1;
 }
 /* .------------^^^^^------------------------------- */
+/* ------estilos para cada imagen de la galeria galeria--------------- */
+.galeria4:hover> .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+}
+.galeria8:hover> .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+}
+
+
 /* --------------------opiniones--------------------------------------- */
 .opiniones {
     display: flex;
@@ -991,6 +999,13 @@ color: white;
         overflow: scroll;
         
     }
+    .galeria2:hover> .proceso-trabajo_item_ventana-emergente1 {
+        transform: translate(-50%);
+    }
+    .galeria6:hover> .proceso-trabajo_item_ventana-emergente1 {
+        transform: translate(-50%);
+    }
+   
     
 }
 @media(max-width:400px){
@@ -1033,7 +1048,12 @@ color: white;
     .proceso-trabajo_item .item-img{
         height: 25rem;
     }
-
+    .item-subtitulo {
+        /*    border: 2px solid red;*/
+    
+        bottom: -10%;
+        transition: bottom 1s;
+    }
 
 
 
@@ -1048,7 +1068,54 @@ color: white;
         overflow: scroll;
         height: 100vh;
     }
-    .galeria-imgs_container{
-        
-    }
+   /* --------------mapa------------------- */
+   .mapa-container{
+    flex-direction: column;
+   }
+   .mapa{
+    width: 100%;
+   }
+   .mapa iframe{
+    width: 100%;
+    /* border: 22px solid red; */
+   }
+   .mapa-container .formulario{
+    /* border: 5px solid red; */
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+   }
+
+   /* ---------------footer superior----------- */
+   .footer-superior{
+    flex-direction: column;
+   }
+   .footer-superior_descripcion{
+    /* border: 2px solid white; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+   }
+   .footer-logo{
+flex-grow: 2;
+   }
+   .footer-frase{
+    flex-grow: 1;
+   }
+   .footer-parrafo{
+    flex-grow: 1;
+    text-align: justify;
+   }
+   .footer-superior{
+    padding: 0 .5rem;
+   }
+
+   .datos-ubicacion{
+    width: 100%;
+    padding-bottom: 1rem;
+   }
+   .proceso-trabajo_item:hover>.item-subtitulo {
+    bottom: 10%;
+}
 }
