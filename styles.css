@@ -1130,15 +1130,30 @@ flex-grow: 2;
     }
     
 } */
-@media (min-width: 866px) and (min-height: 200px) and (max-height: 500px)  {
- 
+
+
+
+    @media (max-width: 876px)and (min-height:200px)and (max-height:600px){
+
        .article-muestras{
-        height: 100vh;
+        height: auto;
         border: 2px solid red;
+        
+       }
+       .muestras-container_descripcion-container{
+        margin: auto;
+        top: 0;
+       }
+       .muestras-container_presentacion{
+        /* border: 20px solid red; */
+   
+       }
+       .muestras-container_descripcion-container .btn{
+        width: 50%;
        }
        .proceso-trabajo{
         border: 2px solid green;
-        height: 170vh;
+        height: 180vh;
        }
-      
-  }
+    }
+  
