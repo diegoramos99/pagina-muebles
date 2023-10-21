@@ -1137,7 +1137,7 @@ flex-grow: 2;
 
        .article-muestras{
         height: auto;
-        border: 2px solid red;
+        /* border: 2px solid red;  */
         
        }
        .muestras-container_descripcion-container{
@@ -1151,13 +1151,17 @@ flex-grow: 2;
        .muestras-container_descripcion-container .btn{
         width: 50%;
        }
+       /* ----------proceso trabajo----------- */
        .proceso-trabajo{
-        border: 2px solid green;
+        /* border: 2px solid green; */
         height: 180vh;
        }
+       /* .proceso-trabajo .proceso-trabajo_BTN {
+        margin: auto;
+       } */
        .galeria{
-        height: 150vh;
-        border: 2px solid red;
+           /* border: 2px solid red; */
+        height: 200vh;
         margin: 0;
         background-color: black;
        }
@@ -1165,7 +1169,8 @@ flex-grow: 2;
         margin: 0;
        }
        .galeria .btn-mostrar-mas{
-        margin: 0;
+        margin: 1rem 0;
+        width: 40%;
        }
     }
   
