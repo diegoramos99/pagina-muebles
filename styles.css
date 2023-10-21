@@ -875,6 +875,9 @@ color: white;
         height: 3rem;
         font-size: small;
     }
+    .article-muestras .muestras-container_descripcion .muestras-container_descripcion-container p{
+        line-height: 2
+    }
     /* ------------proceso de trabajo----------- */
     .proceso-trabajo {
         /* border: 20px solid rebeccapurple; */
