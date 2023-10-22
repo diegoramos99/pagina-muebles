@@ -41,16 +41,18 @@ const contenidoVentanaEmergente1=
 
     contenedorImg1.forEach(function(elemento){
         const ventanaEmergente=elemento.querySelector(".proceso-trabajo_item_ventana-emergente1");
-
         elemento.addEventListener('mouseover',function(){
-            ventanaEmergente.innerHTML=contenidoVentanaEmergente1;
-      
+            
+            elemento.style.overflow = "visible"
+            setTimeout(() => {
+                ventanaEmergente.innerHTML=contenidoVentanaEmergente1;
+            }, 1000);
+            
         })
         elemento.addEventListener('mouseout',function(){
-            ventanaEmergente.innerHTML="";
-      
-        })
-       
+            elemento.style.overflow = "hidden"
+
+        })    
      })
    
 
