@@ -10,51 +10,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <title>Nombre de la empresa</title>
+    <title>Nosotros</title>
 </head>
 <body>
     <div class="cointainer">
         <header>
             <nav>
+
+
+                <div class="nav-movil">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                            class="bi bi-list"></i></button>
+
+                    <div class="offcanvas offcanvas-start " data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>Try scrolling the rest of the page to see this option in action.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
                 <div class="header-nav-container">
-                   
+                    <div class="header-logo">
+                        <div class="header-logo_container">
+                            <img class="img" src="../assets/logo-header.jpg" alt="">
+                        </div>
+                    </div>
                     <div class="header-nav">
                         <ul>
                             <li>
-                                <div class="contenedor-li">
-                                    INICIO
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                <a href="../index.html">
+                                    <div class="contenedor-li">
+                                        HOME
+                                    </div>
+                                    <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <div class="contenedor-li"><a href="views/contacto.html"> NOSOTROS</a>
+                                <a href="../views/nosotros.html">
+                                    <div class="contenedor-li">
+                                        NOSOTROS
+                                    </div>
+                                    <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                </a>
+                            </li>
 
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                            <li>
+                                <a href="../views/nuestrosProductos.html">
+                                    <div class="contenedor-li">
+                                        NUESTROS PRODUCTOS
+                                    </div>
+                                    <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <div class="contenedor-li">
-                                    COCINAS
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                <a href="../views/materiales.html">
+                                    <div class="contenedor-li">
+                                       MATERIALES
+                                    </div>
+                                    <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                </a>
                             </li>
                             <li>
-                                <div class="contenedor-li">
-                                    VESTIDORES
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
-                            </li>
-                            <li>
-                                <div class="contenedor-li">
-                                    TU PROYECTO
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
-                            </li>
-                            <li>
-                                <div class="contenedor-li">
-                                    CONTACTO
-                                </div>
-                                <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                <a href="../views/contacto.html">
+                                    <div class="contenedor-li">
+                                        CONTACTO
+                                    </div>
+                                    <div class="contenedor-icon-li"><i class="bi bi-caret-up-fill"></i></div>
+                                </a>
                             </li>
 
                         </ul>

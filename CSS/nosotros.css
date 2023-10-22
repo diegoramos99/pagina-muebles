@@ -25,10 +25,13 @@
 .carusel ul{
     display: flex;
     flex-direction: column;
+    list-style: none;
 }
 .carusel ul li a {
-    text-decoration: none;
-    color: rgb(60, 7, 253);
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+
 }
 
 .muestras{
@@ -36,10 +39,10 @@
 }
 
 .muestras article{
-    /*border: 2px solid red;*/
-    margin: auto;
+/* border: 2px solid red */
+margin: auto;
 }
-.muestras-container_presentacion-container {
+.muestras-container_presentacion {
 
 }
 .muestras-container_presentacion-container {
@@ -65,4 +68,11 @@
 .muestras-container-2 .muestras-container_descripcion{
     background-color: black;
     color: aliceblue;
+}
+
+@media (max-width:250px){
+    .muestras-container_descripcion-container .btn{
+        width: 50%;
+        margin: auto;
+    }
 }
