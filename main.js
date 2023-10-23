@@ -3,23 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const intervalTime = 5000; // Cambiar cada 5 segundos
 
-    //Mostrar el primer slide
-    //slides[currentIndex].style.display = "block";
-   // slides[currentIndex].classList.add("opacity")
-
     function mostrarCarrusel() {
-        //elemento.classList.replace("carousel-slide", "carousel-slide-1");
-       // slides[currentIndex].classList.remove("opacity");
-        slides[currentIndex].style.opacity = "0";
 
+        slides[currentIndex].style.opacity = "0"
         currentIndex = (currentIndex + 1) % slides.length;
         console.log(currentIndex);
-        
         slides[currentIndex].style.opacity = "1";
-        //slides[currentIndex].classList.add("opacity");
-
     }
-
     // Cambiar de slide automáticamente
     setInterval(mostrarCarrusel, intervalTime);
 });
@@ -28,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
      const contenedorImg1=document.querySelectorAll('.galeria-imgs_container');
 
 
-// aca creamos ell contenido de cada ventana emergente
+// aca creamos ell contenido de cada ventana emergente en index-galeria 
 const contenidoVentanaEmergente1=
 `<div class="emergente-titulo hijos">
 <h2>muebele de madera</h2>
@@ -38,18 +28,32 @@ const contenidoVentanaEmergente1=
 <div class="emergente-caracteristicas hijos">costo estimado de muebels de este tipo</div>`
 
     
-
     contenedorImg1.forEach(function(elemento){
         const ventanaEmergente=elemento.querySelector(".proceso-trabajo_item_ventana-emergente1");
-        elemento.addEventListener('mouseover',function(){
+        elemento.addEventListener('click',function(){
             
+            ventanaEmergente.innerHTML=contenidoVentanaEmergente1;    
             elemento.style.overflow = "visible"
-            ventanaEmergente.innerHTML=contenidoVentanaEmergente1;            
+            
+            ventanaEmergente.classList.toggle("proceso-trabajo_item_ventana-emergente1_evento")
+                    
         })
-        elemento.addEventListener('mouseout',function(){
-            elemento.style.overflow = "hidden"
-        })    
+      
      })
+
+// codigo para nuestrosProductos.html
+
+const nuestrosProductosGaleriaBtn=document.querySelector('#galeriaBtn');
+const contentGaleria=document.querySelector('#galeria-imgs')
+nuestrosProductosGaleriaBtn.addEventListener('click',(event)=>{
+    // event.preventDefault();
+  
+  contentGaleria.style.height="max-content"
+
+})
+
+
+
    
 
      
