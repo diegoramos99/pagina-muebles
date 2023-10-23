@@ -44,14 +44,10 @@ const contenidoVentanaEmergente1=
         elemento.addEventListener('mouseover',function(){
             
             elemento.style.overflow = "visible"
-            setTimeout(() => {
-                ventanaEmergente.innerHTML=contenidoVentanaEmergente1;
-            }, 1000);
-            
+            ventanaEmergente.innerHTML=contenidoVentanaEmergente1;            
         })
         elemento.addEventListener('mouseout',function(){
             elemento.style.overflow = "hidden"
-
         })    
      })
    
