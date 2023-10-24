@@ -1,3 +1,53 @@
 .galeria-imgs{
     overflow: hidden;
 }
+
+.galeria .galeria-imgs{
+    /* border: 20px solid red; */
+}
+
+.galeria4 .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(0%);
+    /* border: 20px solid red; */
+}
+.galeria8  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(0%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria16  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria19  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria21  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria25  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria7  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}
+
+.galeria17  .proceso-trabajo_item_ventana-emergente1 {
+    transform: translate(-50%);
+    /* border: 20px solid red; */
+
+}

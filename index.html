@@ -282,13 +282,7 @@
                         </div>
                         <div id='proceso-trabajo_item_ventana-emergente1'
                             class="proceso-trabajo_item_ventana-emergente1">
-                            <!-- <div class="emergente-titulo">
-                                <h2>muebele de madera</h2>
-                            </div>
-                            <div class="emergente-caracteristicas">madera del algun tipo</div>
-                            <div class="emergente-caracteristicas">mueble para un determinado ambiente</div>
-                            <div class="emergente-caracteristicas">costo estimado de muebels de este tipo</div> -->
-
+               
                         </div>
                     </div>
                     <div id="galeria-imgs_container2" class="galeria-imgs_container galeria2">
@@ -307,12 +301,6 @@
                             </div>
                         </div>
                         <div class="proceso-trabajo_item_ventana-emergente1">
-                            <!-- <div class="emergente-titulo">
-                                <h2>muebele de madera</h2>
-                            </div>
-                            <div class="emergente-caracteristicas">madera del algun tipo</div>
-                            <div class="emergente-caracteristicas">mueble para un determinado ambiente</div>
-                            <div class="emergente-caracteristicas">costo estimado de muebels de este tipo</div> -->
                         </div>
                     </div>
                     <div id="galeria-imgs_container3" class="galeria-imgs_container galeria3">
@@ -331,12 +319,6 @@
                             </div>
                         </div>
                         <div class="proceso-trabajo_item_ventana-emergente1">
-                            <!-- <div class="emergente-titulo">
-                                <h2>muebele de madera</h2>
-                            </div>
-                            <div class="emergente-caracteristicas">madera del algun tipo</div>
-                            <div class="emergente-caracteristicas">mueble para un determinado ambiente</div>
-                            <div class="emergente-caracteristicas">costo estimado de muebels de este tipo</div> -->
                         </div>
                     </div>
                     <div id="galeria-imgs_container4" class="galeria-imgs_container galeria4">
@@ -464,7 +446,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-mostrar-mas"><button onclick="location.href='../views/nuestrosProductos.html'" class="btn">mostrar mas</button></div>
+                <div  class="btn-mostrar-mas"><button onclick="location.href='../views/nuestrosProductos.html'" class="btn">mostrar mas</button></div>
 
             </section>
             <!-- <section class="opiniones">
@@ -486,16 +468,17 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="formulario">
-                        <form action="">
+                        <form action="https://formspree.io/f/xeqbnjqq"
+                        method="POST">
                             <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="" placeholder="ingrese su nombre">
-                            <label for="">apellido</label>
-                            <input type="text" placeholder="ingrese su apellido">
-                            <label for="">email</label>
-                            <input type="email" placeholder="ingrese su email">
-                            <label for="">asunto</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                            <button class="btn" type="submit">enviar</button>
+                            <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+                            <label for="apellido">apellido</label>
+                            <input type="text" name="apellido" placeholder="ingrese su apellido">
+                            <label for="email">email</label>
+                            <input type="email" id="email" placeholder="ingrese su email">
+                            <label for="asunto">asunto</label>
+                            <textarea name="asunto" id="" cols="30" rows="10"></textarea>
+                            <button class="btn" id="enviar" type="submit">enviar</button>
                         </form>
                     </div>
                 </div>
