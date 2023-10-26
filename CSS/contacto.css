@@ -45,14 +45,14 @@ nav div{
 }
 
 .carusel ul::before {
-    content: "contactos";
+    content: "CONTACTENOS";
     font-size: 50px;
     color: rgb(0, 0, 0);
     background-color: #00000000;
 }
 
 .carusel ul li::after {
-    content: "... NOSOTROS";
+    content: "... CONTACTOS";
     font-size: large;
     color: rgb(0, 0, 0);
 }

@@ -1,17 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const slides = document.querySelectorAll(".carousel-slide");
-    let currentIndex = 0;
-    const intervalTime = 4000; // Cambiar cada 5 segundos
-
-    function mostrarCarrusel() {
-
-        slides[currentIndex].style.opacity = "0"
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].style.opacity = "1";
-    }
-    // Cambiar de slide automáticamente
-    setInterval(mostrarCarrusel, intervalTime);
-});
 
 // selecionamos cada imagen de la galeria
 
@@ -165,6 +151,18 @@ let contendidosContainer = [
         caracteristica2 = "para cocina",
         caracteristica3 = "hay de color negro"
     ],
+    contendio25 = [
+        titulo = "estante de metalpesado",
+        caracteristica1 = "es mucho muy grande ",
+        caracteristica2 = "para living",
+        caracteristica3 = "hay de color rojo"
+    ],
+    contendio26 = [
+        titulo = "estante de mas pesado que el anterior",
+        caracteristica1 = "es mucho muy grande ",
+        caracteristica2 = "para living",
+        caracteristica3 = "hay de color rojo"
+    ]
 ]
 
 // codigo para nuestrosProductos.html
@@ -180,6 +178,7 @@ nuestrosProductosGaleriaBtn.addEventListener('click', (event) => {
 })
 
 function prepararVentana(indice1 ,ventana) {
+    // revisar el id de cada nueva imagen agregada en el archivo html
     const GALERIA_VENTANA_EMERGENTE = document.querySelector("#galeria-imgs_container" + ventana);
     const VENTANA = GALERIA_VENTANA_EMERGENTE.querySelector(".proceso-trabajo_item_ventana-emergente1");
     let contenidoVentanaEmergente244 = `<div class="emergente-titulo hijos">

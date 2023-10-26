@@ -1,3 +1,43 @@
+/* --------carrusel--------- */
+.carrusel{
+    background-image: url("../assets/carrusel2.jpg"),url("../assets/carrusel1.jpg"),url("../assets/carrusel3.jpg");
+
+    background-position: 0 0, 33vw 0, 66vw 0;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain;
+    opacity: .9;
+        width: 100%;
+        height: 41vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+}
+.carrusel ul::before{
+    content: "NUESTROS PRODUCTOS";
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    background-color: #00000000;
+}
+.carrusel ul li::after{
+     content: "... NUESTROS PRODUCTOS";
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+.carrusel ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.carrusel ul li a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+
+}
+
+/*---------------------------------------------------------------- */
 .galeria-imgs{
     overflow: hidden;
 }
