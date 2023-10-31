@@ -43,6 +43,9 @@
 /* border: 2px solid red */
 margin: auto;
 }
+.muestras-container-1 {
+    padding: 2% 0;
+}
 .muestras-container_descripcion-container p {
     line-height: 2rem;
     text-align: start;
@@ -68,6 +71,7 @@ margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .muestras-container-2 .muestras-container_descripcion{
     background-color: black;
@@ -77,8 +81,9 @@ margin: auto;
     .muestras-container_descripcion-container p {
         line-height: 1.5rem;
         text-align: start;
-        letter-spacing: .125rem;
-        word-spacing: 0.0px 
+        letter-spacing: 0;
+        word-spacing: 0.0px ;
+        margin-bottom: 0;
     }
 }
 @media (max-width:850px){

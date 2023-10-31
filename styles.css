@@ -257,8 +257,7 @@ header nav{
 }
 
 .muestras-container-1 {
-    border-bottom: 1px solid rgb(143, 143, 165); 
-    padding-bottom: 5%;
+  
     display: flex;
     margin: 4rem 0;
     height: 60vh;
@@ -336,7 +335,7 @@ header nav{
 .muestras-container_descripcion-container {
     /* border: 2px solid rgb(128, 4, 0); */
     margin: 0 1rem;
-    width: 70%;
+    width: 85%;
     position: relative;
     top: 10%;
 }
