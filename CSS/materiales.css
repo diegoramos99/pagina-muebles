@@ -1,0 +1,94 @@
+.materiales {
+    border: 4px solid white ;
+}
+.muestras-container-2 {
+    border: 4px solid red ;
+    
+}
+.article-muestras {
+    border: 4px solid beige ;
+
+}
+.materiales-article {
+    border: 4px solid blue ;
+    height: 80vh;
+}
+.muestras-container_presentacion {
+    border: 4px solid blueviolet ;
+
+}
+.materiales-container {
+    border: 4px solid green ;
+    width: 75%;
+
+}
+.galeria-accesorios {
+    border: 4px solid gold ;
+
+}
+.materiales-fotos-container {
+    border: 10px solid rgb(255, 0, 200) ;
+    height: 100%;
+    
+}
+.proceso-trabajo-contenido {
+    border: 4px solid blue ;
+    height: 80vh;
+
+}
+.materiales-fotos {
+    border: 4px solid wheat ;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.proceso-trabajo_item {
+    border: 4px solid rgb(57, 243, 0) ;
+    width: 30%;
+    height: 45%;
+}
+.proceso-trabajo_item img{
+    border: 4px solid rgb(255, 0, 0) ;
+    
+    height: 90%;
+}
+.proceso-trabajo_item .subtitulo{
+    border: 4px solid orangered ;
+    position: relative;
+    height: auto;
+    
+
+}
+.item1 {
+}
+.item-img {
+    border: 4px solid green;
+    height: 80%;
+}
+.img {
+}
+.subtitulo {
+}
+.item2 {
+}
+.item3 {
+}
+.item4 {
+}
+.item5 {
+}
+.item6 {
+}
+.muestras-container_descripcion {
+}
+.materiales-descripcion {
+    border: 4px solid rgb(2, 255, 107);
+    width: 25%;
+
+}
+.muestras-container_descripcion-container {
+}
+.materiales-descripcion-container {
+    border: 4px solid rebeccapurple;
+}

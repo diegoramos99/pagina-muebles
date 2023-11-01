@@ -3,7 +3,7 @@
     background-image: url("../assets/carrusel2.jpg"),url("../assets/carrusel1.jpg"),url("../assets/carrusel3.jpg");
 
     background-position: 0 0, 33vw 0, 66vw 0;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat, repeat, no-repeat;
     background-size: contain;
     opacity: .9;
         width: 100%;
