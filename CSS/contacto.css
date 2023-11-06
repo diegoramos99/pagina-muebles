@@ -42,32 +42,11 @@ nav div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.carusel ul::before {
-    content: "CONTACTENOS";
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    background-color: #00000000;
-}
-
-.carusel ul li::after {
-    content: "... CONTACTOS";
-    font-size: large;
-    color: rgb(0, 0, 0);
-}
-
-.carusel ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.carusel ul li a {
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-
+.logo-carrusel{
+    position: relative;
 }
 
 
@@ -301,6 +280,9 @@ text-align: center;
         width: 100%;
         margin: 0;
     }
+    input{
+        text-align: center;
+    }
 }
 
 @media (max-width:650px) {
@@ -382,6 +364,7 @@ footer .footer-superior .datos-ubicacion{
 }
 }
 @media(max-width:400px){
+    
     .formulario_section-contain {
         margin-top: 7rem;
         width: 90%;
