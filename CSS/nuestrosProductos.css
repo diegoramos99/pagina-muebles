@@ -4,10 +4,10 @@
     background-image: url("../assets/carrusel3.jpg");
     background-position: center;
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
     opacity: .9;
         width: 100vw;
-        height: 41vh;
+        height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,39 +16,16 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    margin-top: 20vh;
 }
 
-.carrusel ul::before {
-    content: "NUESTROS PRODUCTOS";
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    background-color: #00000000;
-}
 
-.carrusel ul li::after {
-    content: "... NUESTROS PRODUCTOS";
-    font-size: large;
-    color: rgb(0, 0, 0);
-}
-
-.carrusel ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.carrusel ul li a {
-    text-decoration: underline;
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-
-}
 
 .logo-carrusel {
     /* border: 20px solid red; */
     position: relative;
-    width: 30%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
 
 }
 

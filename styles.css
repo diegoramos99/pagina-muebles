@@ -165,7 +165,7 @@ header nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    font-size: large;
 
 }
 
@@ -187,21 +187,11 @@ header nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*---------------------------- carrusel------------------------------- */
 .carusel {
     /* border: 10px solid red; */
     width: 100%;
-    margin-top:20vh ;
+    margin-top:10vh ;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -277,11 +267,11 @@ header nav {
     object-fit: contain
 }
 
-.logo-carrusel:hover {
+/* .logo-carrusel:hover {
     opacity: 1;
     filter: brightness(150%);
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.452);
-}
+} */
 
 /* -------------------------muestras.---------------------------------------- */
 
@@ -395,6 +385,7 @@ header nav {
 
     letter-spacing: 2px;
     /* Aumenta el espaciado entre letras a 2 píxeles */
+    font-size: x-large;
 
 }
 
@@ -932,6 +923,18 @@ header nav {
     .header-nav ul {
         width: 100%;
     }
+
+    /* ----muestras------ */
+    .muestras-container_descripcion p {
+        /* border: 2px solid red; */
+        width: 100%;
+        line-height: 2.5;
+    
+        letter-spacing: 1px;
+        /* Aumenta el espaciado entre letras a 2 píxeles */
+        font-size: large;
+    
+    }
 }
 
 @media(max-width:1050px) {
@@ -956,6 +959,16 @@ header nav {
     }
 
     /* ------------muestras----------------- */
+    .muestras-container_descripcion p {
+        /* border: 2px solid red; */
+        width: 100%;
+        line-height: 1.5;
+    
+        letter-spacing: 1px;
+        /* Aumenta el espaciado entre letras a 2 píxeles */
+        font-size: medium;
+    
+    }
     .article-muestras {
         height: 40vh;
 
