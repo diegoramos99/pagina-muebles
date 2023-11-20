@@ -1,42 +1,18 @@
 
 /* header */
+header{
+    position: relative;
+}
 nav{
     background-color: transparent;
+
 }
 /* ---------------------------------------------------- */
-.materiales {
-    border: 4px solid white ;
-}
-
-.article-muestras {
-    border: 4px solid rgb(255, 255, 0) ;
-    margin-top: 20vh;
-
-}
-.materiales-article {
-    border: 4px solid blue ;
-    height: 80vh;
-}
-.muestras-container_presentacion {
-    border: 4px solid blueviolet ;
-
-}
-.materiales-container {
-    border: 4px solid green ;
-    width: 75%;
-
-}
-.galeria-accesorios {
-    border: 4px solid gold ;
-
-}
-.materiales-fotos-container {
-    border: 10px solid rgb(255, 0, 200) ;}
-
 .atuMedida{
-    border: 4px solid rgb(81, 255, 0);
+    border: 4px solid rgb(221, 33, 0);
+    position :relative;
     height: 50vh;
-    margin: 3rem 0;
+
 }
 .atuMedida .muestras-container-2 {
     border: 4px solid rgb(0, 170, 255);
@@ -44,22 +20,100 @@ nav{
     height: 100%;
     margin: 0;
 }
+.muestras-container_descripcion{
+    border: 4px solid rebeccapurple;
+    width: 50%;
+}
+.muestras-container_descripcion_materiales{
+    border: 4px solid rebeccapurple;
+    width: 20%;
+}
+
+
 .atuMedida .muestras-container_presentacion{
     border: 4px solid green;
 }
 .muestras-container_presentacion-container{
+    border: 22px solid white;
     border: none;
     height: 100%;
+    width: 100%;
 }
-.atuMedida .muestras-container_descripcion{
-    border: 4px solid rebeccapurple;
+.materiales {
+    border: 4px solid rgb(238, 112, 8) ;
+    height: 80vh;
+}
+.materiales-container {
+    border: 4px solid green ;
+    width: 80%;
+    height: 100%;
+
+}
+.article-muestras {
+    border: 4px solid rgb(255, 255, 0) ;
+    
+
+}
+.materiales-article {
+    border: 4px solid rgb(30, 255, 0) ;
+    height: 100%;
+    margin: 0;
+}
+
+.galeria-accesorios {
+    border: 4px solid gold ;
+    
+}
+.materiales-fotos-container {
+    border: 10px solid rgb(255, 0, 200) ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    overflow: scroll;
+}
+.materiales-fotos{
+    width: 30%;
+    height: 40%;
+    border: 2px solid white;
+    text-align: center;
+}
+.materiales-fotos_contenedor{
+    border: 2px solid black;
+    height: 100%;
+}
+
+.item-img{
+    border: 5px solid rgb(239, 255, 15);
+    filter: brightness(100%);
+    height: 80%;
+}
+ 
+.subtitulo{
+    height: 20%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.muestras-container_descripcion-container{
+    border: 2px solid white;
+      
+        margin: 0 ;
+        width: 100%;
+        position: relative;
+        top: 0;
 }
 
 @media(max-width:700px){
     .article-muestras {
         border: 4px solid rgb(255, 255, 0) ;
         margin-top: 0vh;
-    
+        
     }
 
 
