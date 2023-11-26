@@ -82,7 +82,15 @@ nav{
     flex-wrap: wrap;
     gap: 1rem;
     overflow: scroll;
+    overflow-x: hidden;
 }
+.materiales-fotos-container::-webkit-scrollbar  {
+    /* border: 10px solid rgb(255, 0, 200) ; */
+ background-color: rgb(138, 138, 138);
+ width: 1px;
+
+}
+
 .materiales-fotos{
     width: 30%;
     height: 40%;
