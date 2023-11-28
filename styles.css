@@ -940,7 +940,13 @@ header nav {
     
     }
 }
-
+@media(max-width:1200px) {
+    .header-nav ul li a .contenedor-li {
+     
+        font-size: medium;
+      
+    }
+}
 @media(max-width:1050px) {
     .header-nav ul {
         font-size: small;

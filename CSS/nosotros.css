@@ -29,6 +29,7 @@
 
 .muestras {
     margin: 4rem 0;
+    margin-bottom:0 ;
 }
 
 .muestras article {
@@ -37,7 +38,6 @@
 }
 
 .muestras-container-1 {
-    padding: 2% 0;
 }
 
 .muestras-container_descripcion-container p {
