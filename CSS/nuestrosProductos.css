@@ -1,86 +1,33 @@
+/* ---------header------------ */
+.isotipo h2 {
+    color: white;
+}
+
 /* --------carrusel--------- */
-.carrusel{
-    /* border: 10px solid red; */
+.carrusel {
     background-image: url("../assets/carrusel3.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     opacity: .9;
-        width: 100vw;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-
     display: flex;
     justify-content: end;
     align-items: center;
     margin-top: 20vh;
 }
 
-
-
 .logo-carrusel {
-    /* border: 20px solid red; */
     position: relative;
     width: 50%;
     height: 50%;
-
 }
 
-/*---------------------------------------------------------------- */
 .galeria-imgs {
     overflow: hidden;
-}
-
-.galeria .galeria-imgs {
-    /* border: 20px solid red; */
-}
-
-.galeria4 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(0%);
-    /* border: 20px solid red; */
-}
-
-.galeria8 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(0%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria16 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria19 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria21 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria25 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria7 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
-}
-
-.galeria17 .proceso-trabajo_item_ventana-emergente1 {
-    transform: translate(-50%);
-    /* border: 20px solid red; */
-
 }

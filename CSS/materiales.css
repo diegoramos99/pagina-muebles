@@ -1,47 +1,47 @@
-
 /* header */
-header{
+header {
     position: relative;
+    height: 25vh;
 }
-nav{
+
+nav {
     background-color: transparent;
-
 }
+
+.isotipo h2 {
+    color: white;
+}
+
 /* ---------------------------------------------------- */
-.atuMedida{
+.atuMedida {
     /* border: 4px solid rgb(221, 33, 0); */
-    position :relative;
+    position: relative;
     height: 50vh;
-
 }
-.atuMedida .muestras-container-2 {
-    /* border: 4px solid rgb(0, 170, 255); */
 
+.atuMedida .muestras-container-2 {
     height: 100%;
     margin: 0;
 }
-.muestras-container_descripcion{
-    /* border: 4px solid rebeccapurple; */
+
+.muestras-container_descripcion {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.muestras-container_descripcion_materiales{
+
+.muestras-container_descripcion_materiales {
     border-right: 1px solid rgb(129, 129, 129);
     width: 20%;
 }
 
-
-.atuMedida .muestras-container_presentacion{
-    /* border: 4px solid green; */
-}
-.muestras-container_presentacion-container{
-    /* border: 22px solid white; */
+.muestras-container_presentacion-container {
     border: none;
     height: 100%;
     width: 100%;
 }
+
 .materiales {
     /* border: 4px solid rgb(238, 112, 8) ; */
     margin-top: 2rem;
@@ -50,17 +50,20 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
 .materiales-container {
     /* border: 4px solid green ; */
     width: 80%;
     height: 100%;
-    
-}
-.article-muestras {
-    /* border: 4px solid rgb(255, 255, 0) ; */
-    
 
 }
+
+.article-muestras {
+    /* border: 4px solid rgb(255, 255, 0) ; */
+
+
+}
+
 .materiales-article {
     /* border: 4px solid rgb(30, 255, 0) ; */
     height: 100%;
@@ -71,8 +74,9 @@ nav{
 
 .galeria-accesorios {
     /* border: 4px solid gold ; */
-    
+
 }
+
 .materiales-fotos-container {
     /* border: 10px solid rgb(255, 0, 200) ; */
     height: 100%;
@@ -84,31 +88,33 @@ nav{
     overflow: scroll;
     overflow-x: hidden;
 }
-.materiales-fotos-container::-webkit-scrollbar  {
+
+.materiales-fotos-container::-webkit-scrollbar {
     /* border: 10px solid rgb(255, 0, 200) ; */
- background-color: rgb(138, 138, 138);
- width: 1px;
+    background-color: rgb(138, 138, 138);
+    width: 1px;
 
 }
 
-.materiales-fotos{
+.materiales-fotos {
     width: 30%;
     height: 40%;
     /* border: 2px solid white; */
     text-align: center;
 }
-.materiales-fotos_contenedor{
+
+.materiales-fotos_contenedor {
     /* border: 2px solid black; */
     height: 100%;
 }
 
-.item-img{
+.item-img {
     /* border: 5px solid rgb(239, 255, 15); */
     filter: brightness(100%);
     height: 80%;
 }
- 
-.subtitulo{
+
+.subtitulo {
     /* border: 2px solid red; */
     height: 20%;
     display: flex;
@@ -117,18 +123,18 @@ nav{
 }
 
 
-.muestras-container_descripcion-container{
+.muestras-container_descripcion-container {
     /* border: 2px solid white; */
-      
-        margin: 0 ,1rem;
-        width: 100%;
-        position: relative;
-        top: 0;
+
+    margin: 0, 1rem;
+    width: 100%;
+    position: relative;
+    top: 0;
 }
 
 /* descripcion muesttras  */
 
-.descripcion-muestras{
+.descripcion-muestras {
     /* border: 6px solid rgb(255, 253, 253); */
 
     display: flex;
@@ -136,7 +142,8 @@ nav{
     align-items: center;
     height: 70vh;
 }
-.descripcion-muestras_container{
+
+.descripcion-muestras_container {
     /* border: 5px solid red; */
     display: flex;
     justify-content: end;
@@ -145,7 +152,8 @@ nav{
     height: 70%;
     left: -10%;
 }
-.descripcion-muestras_texto-container{
+
+.descripcion-muestras_texto-container {
     /* border: 5px solid green; */
     color: aliceblue;
     background-color: #0055A4;
@@ -157,128 +165,146 @@ nav{
     height: auto;
     padding: 1rem;
 }
-.descripcion-muestras_img-container{
+
+.descripcion-muestras_img-container {
     /* border: 5px solid rgb(228, 243, 16); */
     width: 100%;
     height: 100%;
 }
-.descripcion-muestras_img-container img{
+
+.descripcion-muestras_img-container img {
     /* border: 5px solid black; */
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-@media(max-width:1150px){
+
+@media(max-width:1150px) {
     .materiales-article {
         width: 100%;
     }
-    .descripcion-muestras_texto-container{
+
+    .descripcion-muestras_texto-container {
         width: 100%;
     }
 }
-@media(max-width:700px){
-    .atuMedida{
+
+@media(max-width:700px) {
+    .atuMedida {
         height: auto;
     }
-    .muestras-container_descripcion{
+
+    .muestras-container_descripcion {
         width: 100%;
     }
 
-.muestras-container_descripcion_materiales{
-    /* border: 4px solid rebeccapurple; */
-    width: 100%;
-    text-align: center;
-}
-.materiales {
-    height: auto;
+    .muestras-container_descripcion_materiales {
+        /* border: 4px solid rebeccapurple; */
+        width: 100%;
+        text-align: center;
+    }
 
-}
-.article-muestras {
-    /* border: 4px solid rgb(255, 102, 0) ; */
-   flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
+    .materiales {
+        height: auto;
+
+    }
+
+    .article-muestras {
+        /* border: 4px solid rgb(255, 102, 0) ; */
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-.materiales-container{
-    /* border: 4px solid rgb(229, 255, 0); */
-    display: flex;
-  
-}
-.materiales-titulo{
-    /* border: 2px solid black; */
-    width: 30%;
-}
-.materiales-imagenes-container{
-    /* border: 2px solid green; */
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5%;
-}
-.container-materiales{
-    /* border: 2px solid violet; */
-    width: 30%;
-    height: 45%;
-}
-.img-container{
-    /* border: 2px solid black; */
-    width: 100%;
-    height: 80%;
-}
-.img-container img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.subtitulo{
-    /* border: 2px solid pink; */
-    height: 20%;
-}
+    .materiales-container {
+        /* border: 4px solid rgb(229, 255, 0); */
+        display: flex;
+
+    }
+
+    .materiales-titulo {
+        /* border: 2px solid black; */
+        width: 30%;
+    }
+
+    .materiales-imagenes-container {
+        /* border: 2px solid green; */
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5%;
+    }
+
+    .container-materiales {
+        /* border: 2px solid violet; */
+        width: 30%;
+        height: 45%;
+    }
+
+    .img-container {
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 80%;
+    }
+
+    .img-container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .subtitulo {
+        /* border: 2px solid pink; */
+        height: 20%;
+    }
 }
 
-@media(max-width:650px){
-    .descripcion-muestras{
+@media(max-width:650px) {
+    .descripcion-muestras {
         /* border: 6px solid rgb(255, 253, 253); */
         position: relative;
         display: flex;
-  
+
         justify-content: center;
         align-items: center;
         height: 70vh;
     }
-    .descripcion-muestras_texto-container{
+
+    .descripcion-muestras_texto-container {
         /* border: 5px solid violet; */
         color: aliceblue;
         background-color: #0055A4;
         position: relative;
- 
 
-    
-   
-  
+
+
+
+
     }
+
     .descripcion-muestras_container {
         /* border: 5px solid rgb(0, 255, 64); */
         display: flex;
-        
+
         justify-content: center;
         position: relative;
         width: 100%;
         height: 70%;
-        margin: auto;    
+        margin: auto;
         left: 0;
     }
-    .descripcion-muestras_img-container{
+
+    .descripcion-muestras_img-container {
         /* border: 5px solid rgb(228, 243, 16); */
         width: 100%;
         height: 100%;
     }
 }
-@media(max-width:451px){
+
+@media(max-width:451px) {
     .descripcion-muestras_container {
         /* border: 5px solid rgb(0, 255, 64); */
         display: flex;
@@ -287,19 +313,22 @@ nav{
         position: relative;
         width: 100%;
         height: auto;
-        margin: auto;    
+        margin: auto;
         left: 0;
     }
+
     .descripcion-muestras_texto-container {
         margin-right: 0;
         text-align: center;
         padding: 0;
     }
+
     .materiales-container {
         /* border: 4px solid rgb(229, 255, 0); */
         display: flex;
         width: 100%;
     }
+
     .materiales-fotos {
         /* border: 2px solid white; */
         width: 45%;

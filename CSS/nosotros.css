@@ -1,49 +1,52 @@
+.isotipo h2 {
+    color: white;
+}
 
-.carrusel{
-    
+.carrusel {
     background-image: url("../assets/carrusel3.jpg");
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
     opacity: .9;
-        width: 100vw;
-        height: 75vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-
     display: flex;
     justify-content: end;
     align-items: center;
     margin-top: 20vh;
 }
 
-.logo-carrusel{
+.logo-carrusel {
     /* border: 20px solid red; */
     position: relative;
     width: 50%;
     height: 50%;
- 
 }
 
-.muestras{
+.muestras {
     margin: 4rem 0;
 }
 
-.muestras article{
-/* border: 2px solid red */
-margin: auto;
+.muestras article {
+    /* border: 2px solid red */
+    margin: auto;
 }
+
 .muestras-container-1 {
     padding: 2% 0;
 }
+
 .muestras-container_descripcion-container p {
     line-height: 2rem;
     text-align: start;
     letter-spacing: .125rem;
-    word-spacing: .250rem 
+    word-spacing: .250rem
 }
+
 .muestras-container_presentacion-container {
     border: none;
     display: flex;
@@ -53,10 +56,12 @@ margin: auto;
     cursor: pointer;
     background-color: rgb(238, 215, 83);
 }
+
 .muestras-container_descripcion-container {
     top: auto;
 }
-.muestras-container_descripcion .muestras-container_descripcion-container{
+
+.muestras-container_descripcion .muestras-container_descripcion-container {
     /*border: 2px solid rgb(0, 255, 72);*/
     margin: auto;
     height: 100%;
@@ -65,29 +70,33 @@ margin: auto;
     justify-content: center;
     align-items: center;
 }
-.muestras-container-2 .muestras-container_descripcion{
+
+.muestras-container-2 .muestras-container_descripcion {
     background-color: black;
     color: aliceblue;
 }
-@media (max-width:1000px){
+
+@media (max-width:1000px) {
     .muestras-container_descripcion-container p {
         line-height: 1.5rem;
         text-align: start;
         letter-spacing: 0;
-        word-spacing: 0.0px ;
+        word-spacing: 0.0px;
         margin-bottom: 0;
     }
 }
-@media (max-width:850px){
+
+@media (max-width:850px) {
     .muestras-container_descripcion-container p {
         line-height: 1rem;
         text-align: center;
         letter-spacing: .125rem;
-        word-spacing: 0.0px 
+        word-spacing: 0.0px
     }
 }
-@media (max-width:250px){
-    .muestras-container_descripcion-container .btn{
+
+@media (max-width:250px) {
+    .muestras-container_descripcion-container .btn {
         width: 50%;
         margin: auto;
     }
