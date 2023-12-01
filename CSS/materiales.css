@@ -327,6 +327,10 @@ nav {
         text-align: center;
         padding: 0;
     }
+    .descripcion-muestras_texto-container p{
+       text-align: justify;
+       padding: 0 1rem;
+    }
 
     .materiales-container {
         /* border: 4px solid rgb(229, 255, 0); */
@@ -356,11 +360,12 @@ nav {
 
 
     .descripcion-muestras {
-        border: 6px solid rgb(255, 253, 253);
+      
         display: flex;
         justify-content: center;
         align-items: center;
         height: auto;
+        margin-top: 1rem;
     }
     .descripcion-muestras_container {
         /* border: 5px solid red; */
@@ -384,5 +389,8 @@ nav {
         position: relative;
         margin-right: 0;
         text-align: center;
+    }
+    .descripcion-muestras_texto-container p {
+       text-align: justify;
     }
 }

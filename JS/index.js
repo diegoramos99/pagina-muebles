@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".carousel-slide");
     let currentIndex = 0;
-    const intervalTime = 4000; // Cambiar cada 5 segundos
+    const intervalTime = 5000; // Cambiar cada 5 segundos
 
     function mostrarCarrusel() {
 
