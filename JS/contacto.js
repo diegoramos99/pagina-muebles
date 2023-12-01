@@ -8,7 +8,7 @@ function handleResize() {
         const iconoWhatsapp=document.querySelector(".iconoWhatsapp_superior")
        iconoWhatsapp.innerHTML=numeroWhatsappWeb
     }else{
-        const numeroWhatsapp=`<a href="https://whatsapp.com/send?phone=541133472648" target="_blank"><i class="bi bi-whatsapp"></i></a>`
+        const numeroWhatsapp=`<a href="whatsapp://send?phone=541133472648" target="_blank"><i class="bi bi-whatsapp"></i></a>`
         const iconoWhatsapp=document.querySelector(".iconoWhatsapp_superior")
         iconoWhatsapp.innerHTML=numeroWhatsapp
     }
