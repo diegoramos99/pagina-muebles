@@ -805,18 +805,24 @@ header nav {
 
 .footer-logo {
     /* border: 2px solid red; */
-    width: 30%;
+    width: 90%;
     height: 4rem;
     opacity: .6;
     margin: 2rem 0;
+    display: flex;
+    justify-content: start;
 }
 
-.footer-logo img {
-
+.footer-logo .isotipo {
+    /* border: 2px solid white; */
     border-radius: 20px;
-
+    width: 90%;
 }
-
+.footer-logo .isotipo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
 .footer-frase {
     padding-bottom: 1rem;
     text-align: start;
@@ -1436,17 +1442,17 @@ header nav {
 
     }
     .isotipo{
-        /* border: 2px solid rgb(0, 179, 255); */
         justify-self: center;
-        width: 35%;
+        width: 50%;
+        height: 150%;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .isotipo h2{
-        /* border: 2px solid red; */
-        font-size: xx-large;
-        color: #0055A4;
-        position: relative;
-        margin: auto;
+    .isotipo img{
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
       
     }
     .offcanvas-header {
