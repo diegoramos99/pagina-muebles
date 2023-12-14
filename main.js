@@ -6,7 +6,6 @@ function handleResize() {
     // Verifica si la pantalla tiene el ancho y alto deseados
     if (screenWidth >= 700) {
         // Agrega el código que deseas ejecutar cuando la pantalla tiene el ancho y alto deseados
-        console.log("La pantalla tiene el ancho y alto deseados. "+screenWidth);
         const numeroWhatsappWeb=`<a href="https://web.whatsapp.com/send?phone=541133472648" target="_blank"><i class="bi bi-whatsapp"></i></a>`
         const iconoWhatsapp=document.querySelector(".iconoWhatsapp")
        iconoWhatsapp.innerHTML=numeroWhatsappWeb

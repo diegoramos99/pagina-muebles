@@ -91,7 +91,7 @@
 .formmulario-container .formulario form label {
     /* border: 2px solid rgb(119, 119, 119); */
     font-size: x-large;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .formmulario-container .formulario form input:focus {
@@ -190,7 +190,7 @@
     .formmulario-container .formulario form label {
         /* border: 2px solid rgb(119, 119, 119); */
         font-size: large;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -220,12 +220,12 @@
     }
 
     .formulario_section-contain {
-        border: 1px solid rgb(145, 145, 145);
+        /* border: 1px solid rgb(145, 145, 145); */
         border-radius: 10px;
         width: 80%;
         height: 90%;
         margin: auto;
-        box-shadow: 1px 1px 5px;
+        box-shadow: 1px 1px 2px;
     }
 
     .formmulario-container .formulario form {

@@ -41,18 +41,19 @@ h2 {
 
 .btn {
     background-color: #333333;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     color: white;
     width: auto;
     height: 4rem;
     margin: 0 5rem;
-    transition: box-shadow 1s;
+    transition: background-color 1s, box-shadow 1s;
 }
 
 .btn:hover {
-    background-color: #193F63;
-    color: #A36500;
-    box-shadow: 0px 0px 15px black;
+    background-color: #000000;
+    color: #ffffff;
+    /* box-shadow: 0px 0px 15px black; */
+    
 }
 
 /*----------------------------- header -----------------------*/
@@ -510,15 +511,22 @@ header nav {
     justify-content: center;
 
 }
-
-.proceso-trabajo_BTN a.btn {
+.proceso-trabajo_BTN a {
+    /* border: 2px solid rgb(0, 255, 170); */
     width: 30%;
-    margin: 2rem 0;
+    display: flex;
+    text-decoration: none;
+}
+
+.proceso-trabajo_BTN a .btn {
+    /* border: 2px solid white; */
+    width: 100%;
+    margin: auto;
 }
 
 .proceso-trabajo .btn:hover {
     color: aliceblue;
-    background-color: rgba(76, 76, 76, 0.571);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -540,12 +548,12 @@ header nav {
 .galeria_nav {
     /* border: 2px solid black; */
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: aliceblue;
-    margin: 1rem;
+ 
     color: black;
     text-align: center;
 }
@@ -577,13 +585,20 @@ header nav {
 .galeria-imgs {
     /* border: 5px solid blue; */
     width: 100%;
-    height: 90vh;
+    height: 70%;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 25%);
     padding: 0;
-    overflow: visible;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+.galeria-imgs::-webkit-scrollbar {
+    width: 1px ;
+    background-color: gray;
+    
+}
+
 
 .galeria-imgs_container {
     /* border: 5px solid violet;*/
@@ -592,7 +607,7 @@ header nav {
     justify-content: center;
     align-items: end;
     width: 100%;
-    height: 45vh;
+    height: 100%;
     cursor: pointer;
     overflow: visible;
     transition: border 1s;
@@ -648,8 +663,15 @@ header nav {
 }
 
 .btn-mostrar-mas {
-    height: 10%;
-    margin: 2rem 0;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+.btn-mostrar-mas button {
+    /* border: 2px solid red; */
+   margin: auto;
+
 }
 
 .btn-mostrar-mas button:hover {
@@ -843,6 +865,7 @@ header nav {
     /* border: 2px solid red; */
     font-size: xx-large;
     padding: 2rem;
+    padding-right: 0;
     display: flex;
     justify-content: end;
 }
@@ -862,6 +885,9 @@ header nav {
     /* border: 2px solid red; */
     padding: 0 1rem;
 
+}
+.redes-sociales .iconoWhatsapp i{
+    padding-right: 0;
 }
 
 .flex {
@@ -899,14 +925,16 @@ header nav {
     align-items: center;
 }
 
-.logo-footer-inferior {
-    /* border: 2px solid black; */
-    width: 30%;
+
+.logo-footer-inferior a{
+/* border: 2px solid black; */
+width: 100%;
     padding: .5rem 0;
     opacity: .7;
     display: flex;
     justify-content: center;
     color: aliceblue;
+    text-decoration: none;
 }
 
 .logo-footer-inferior .bi {
