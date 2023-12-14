@@ -120,6 +120,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top :1rem ;
 }
 
 
@@ -178,7 +179,11 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+.item-img:hover {
+    transform: scale(1.05);
 
+
+}
 @media(max-width:1150px) {
     .materiales-article {
         width: 100%;

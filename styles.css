@@ -1146,8 +1146,9 @@ width: 100%;
     .isotipo{
         /* border: 2px solid rgb(0, 179, 255); */
         justify-self: center;
-        width: 50%;
+        width: 60%;
         display: flex;
+        margin-left: 1rem;
     }
     .isotipo img{
        width: 100%;
@@ -1164,8 +1165,10 @@ width: 100%;
     }
     .nav-movil .btn {
 
-        width: 4rem;
+        width:auto;
         height: 100%;
+        margin: 0 0;
+        margin-right: 1rem;
     }
 
     .offcanvas-header {
