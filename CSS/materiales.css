@@ -362,7 +362,7 @@ nav {
 }
 @media (max-width: 876px)and (min-height:200px)and (max-height:600px) {
    .materiales{
-    margin-top: 6rem;
+    margin-top: 4rem;
    }
     .atuMedida .muestras-container-2 {
         height: auto;
